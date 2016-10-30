@@ -11,17 +11,34 @@ html(lang="en")
       
       .row
         .column.small-4
-          .h1 SiteName
+          h1 SiteName
 
 
         .column.small-8
-          ul.inline-list
+          ul.inline-list.right.top-actions
             li: a.fi-mail(href="")  Newsletter
             li: a.fi-rss(href="")  RSS
             li  |
             li: form.row.collapse
-              .column.small-4: label Recgste
+              .column.small-4: label Search
               .column.small-6: input(type="text")
               .column.small-2: a.button.postfix(href="") Go
+
+      .row
+        .column.small-12
+          dl.sub-nav
+            dd: a(href="") Home
+            dd: a(href="") Comics
+            dd: a(href="") Movies
+            dd: a(href="") Youtube
+            dd: a(href="") Concert
+
+      .row
+        .column.small-5
+            include _includes/col-1
+        .column.small-4
+            include _includes/col-2
+        .column.small-3
+            include _includes/col-3
 
 
